@@ -1,0 +1,173 @@
+/* this is  */
+/* section 1 */
+.containerHero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 140vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------- */
+.inputPhotoBorder {
+  width: 900px;
+  height: 220px;
+  background-color: #f6f5f4;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 7px;
+}
+.inputPhotoBorderP {
+  font-size: 15px;
+  color: #666666;
+}
+.iconInputImage {
+  font-size: 40px;
+  color: rgb(145, 139, 139);
+}
+.inputPhotoBorderInput {
+  margin-top: 10px;
+  margin-left: 90px;
+}
+.heroInputTitle {
+  width: 900px;
+  height: 50px;
+  background-color: #f6f5f4;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 7px;
+}
+.heroInputTitleInput {
+  display: flex;
+  border: none;
+  width: 100%;
+  height: 49px;
+  background-color: #f6f5f4;
+  border-radius: 7px;
+}
+.heroInputTitleInput[type="text"] {
+  padding-left: 20px;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heroInputTitleInput[type="text"]:focus {
+  outline: none;
+  border: 2px double #efc81a;
+}
+.heroInputIngredients {
+  width: 900px;
+  height: 220px;
+  background-color: #f6f5f4;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 7px;
+}
+.inputIngredientsTextarea {
+  resize: none;
+  display: flex;
+  border: none;
+  width: 100%;
+  height: 220px;
+  background-color: #f6f5f4;
+  border-radius: 7px;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputIngredientsTextarea:focus {
+  outline: none;
+  border: 2px double #efc81a;
+}
+.heroInputVideo {
+  width: 900px;
+  height: 50px;
+  background-color: #f6f5f4;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+  border-radius: 7px;
+}
+.heroInputVideoInput {
+  display: flex;
+  border: none;
+  width: 100%;
+  height: 49px;
+  background-color: #f6f5f4;
+  border-radius: 7px;
+}
+.heroInputVideoInput[type="url"] {
+  padding-left: 20px;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heroInputVideoInput[type="url"]:focus {
+  outline: none;
+  border: 2px double #efc81a;
+}
+.heroButton {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: #efc81a;
+  border-radius: 7px;
+}
+.heroButtonButton {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  border-radius: 7px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #efc81a;
+}
+.heroButtonButtonH2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  width: 100%;
+  height: 48px;
+  border-radius: 7px;
+}
+
+/* -------------- */
+@media screen and (max-width: 412px) {
+  .containerHero {
+    width: 100%;
+    height: 120vh;
+  }
+  .inputPhotoBorder {
+    width: 370px;
+  }
+  .heroInputTitle {
+    width: 370px;
+  }
+  .heroInputIngredients {
+    width: 370px;
+  }
+  .heroInputVideo {
+    width: 370px;
+  }
+}

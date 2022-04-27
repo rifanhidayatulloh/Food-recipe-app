@@ -1,0 +1,26 @@
+.img {
+  width: 380px;
+  height: 320px;
+  object-fit: cover;
+}
+.border {
+  border: none;
+}
+.title {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 130px;
+  color: black;
+}
+.font {
+  font-size: 25px;
+  color: yellow;
+}
+
+@media screen and (max-width: 393px) {
+  .img {
+    width: 350px;
+    height: 290px;
+  }
+}
