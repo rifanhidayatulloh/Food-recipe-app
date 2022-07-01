@@ -1,22 +1,22 @@
 const style = {
   img: {
-    width: "360px",
-    height: "300px",
-    objectFit: "cover",
+    width: '360px',
+    height: '300px',
+    objectFit: 'cover'
   },
   border: {
-    border: "none",
+    border: 'none'
   },
   title: {
-    width: "380px",
-    height: "50px",
+    width: '380px',
+    height: '50px'
   },
   font: {
-    fontSize: "27px",
-    color: "gold",
-    position: "absolute",
-    top: "250px",
-  },
+    fontSize: '27px',
+    color: 'gold',
+    position: 'absolute',
+    top: '250px'
+  }
 };
 
 export default style;
