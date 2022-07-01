@@ -1,18 +1,14 @@
-import React from "react";
-import styles from "../assets/styles/latestrecipe";
-import { Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
-import { Link } from "react-router-dom";
+import React from 'react';
+import styles from '../assets/styles/latestrecipe';
+import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const LatestRecipe = (props) => {
   // console.log(props.photo);
   return (
     <>
       <div>
-        <Card
-          inverse
-          style={styles.border}
-          className="ms-4 ms-lg-5 mb-5 me-0 me-lg-0"
-        >
+        <Card inverse style={styles.border} className="ms-4 ms-lg-5 mb-5 me-0 me-lg-0">
           <Link to={`/${props.id}`}>
             <CardImg
               style={styles.img}

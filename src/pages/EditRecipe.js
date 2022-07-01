@@ -1,51 +1,46 @@
-import React, { useState } from "react";
-import NavBarMain from "../components/NavBar";
-import Footer from "../components/Footer";
-import styleadd from "../assets/styles/Add.module.css";
-import { useNavigate, useSearchParams } from "react-router-dom";
-import { putEditRecipe } from "../redux/actions/recipes";
-import Swal from "sweetalert2";
+import React, { useState } from 'react';
+import NavBarMain from '../components/NavBar';
+import Footer from '../components/Footer';
+import styleadd from '../assets/styles/Add.module.css';
+import { useNavigate, useSearchParams } from 'react-router-dom';
+import { putEditRecipe } from '../redux/actions/recipes';
+import Swal from 'sweetalert2';
 
 const Insert = () => {
   const navigate = useNavigate();
   const [queryParams] = useSearchParams();
-  const idRecipe = queryParams.get("idRecipe");
-  const title = queryParams.get("title");
-  const ingredients = queryParams.get("ingredients");
-  const video = queryParams.get("video");
+  const idRecipe = queryParams.get('idRecipe');
+  const title = queryParams.get('title');
+  const ingredients = queryParams.get('ingredients');
+  const video = queryParams.get('video');
   // console.log(idRecipe, title, ingredients, video);
-  const [photo, setPhoto] = useState("");
+  const [photo, setPhoto] = useState('');
   const [form, setForm] = useState({
     title: title,
     ingredients: ingredients,
-    video: video,
+    video: video
   });
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (
-      form.title == "" ||
-      form.ingredients == "" ||
-      form.video == "" ||
-      !photo
-    ) {
+    if (form.title == '' || form.ingredients == '' || form.video == '' || !photo) {
       Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "All data must be filled",
+        icon: 'error',
+        title: 'Oops...',
+        text: 'All data must be filled'
       });
     } else {
       const data = new FormData();
-      data.append("title", form.title);
-      data.append("ingredients", form.ingredients);
-      data.append("video", form.video);
-      data.append("image", photo);
+      data.append('title', form.title);
+      data.append('ingredients', form.ingredients);
+      data.append('video', form.video);
+      data.append('image', photo);
 
-      const token = localStorage.getItem("token");
+      const token = localStorage.getItem('token');
       putEditRecipe(data, token, idRecipe)
-        .then((response) => {
-          Swal.fire("Add Recipe", "Successful Add Recipe", "success");
-          return navigate("/profile");
+        .then(() => {
+          Swal.fire('Edit Recipe', 'Successful Edit Recipe', 'success');
+          return navigate('/profile');
         })
         .catch((err) => console.log(err));
     }
@@ -80,13 +75,10 @@ const Insert = () => {
           </div>
           <div className={styleadd.heroInputIngredients}>
             <textarea
-              onChange={(e) =>
-                setForm({ ...form, ingredients: e.target.value })
-              }
+              onChange={(e) => setForm({ ...form, ingredients: e.target.value })}
               value={form.ingredients}
               className={styleadd.inputIngredientsTextarea}
-              placeholder="Ingredients"
-            ></textarea>
+              placeholder="Ingredients"></textarea>
           </div>
           <div className={styleadd.heroInputVideo}>
             <input
@@ -99,7 +91,7 @@ const Insert = () => {
           </div>
           <div className={styleadd.heroButton}>
             <button type="submit" className={styleadd.heroButtonButton}>
-              <h2 className={styleadd.heroButtonButtonA}>Post</h2>
+              <h5 className={styleadd.heroButtonButtonA}>Post</h5>
             </button>
           </div>
         </form>

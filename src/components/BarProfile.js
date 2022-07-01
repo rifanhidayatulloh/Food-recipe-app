@@ -1,17 +1,9 @@
-import React, { useState } from "react";
-import LatestRecipe from "./LatesRecipe";
-import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  TabContent,
-  TabPane,
-  Nav,
-  NavItem,
-  NavLink,
-  Row,
-  Col,
-} from "reactstrap";
+import React, { useState } from 'react';
+import LatestRecipe from './LatesRecipe';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
 export default function BarProfile() {
-  const [activeTab, setActiveTab] = useState("1");
+  const [activeTab, setActiveTab] = useState('1');
   const toggle = (tab) => {
     if (activeTab !== tab) {
       setActiveTab(tab);
@@ -22,31 +14,28 @@ export default function BarProfile() {
       <Nav tabs>
         <NavItem>
           <NavLink
-            className={activeTab === "1" ? "active" : ""}
+            className={activeTab === '1' ? 'active' : ''}
             onClick={() => {
-              toggle("1");
-            }}
-          >
+              toggle('1');
+            }}>
             My Recipe
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink
-            className={activeTab === "2" ? "active" : ""}
+            className={activeTab === '2' ? 'active' : ''}
             onClick={() => {
-              toggle("2");
-            }}
-          >
+              toggle('2');
+            }}>
             Saved Recipe
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink
-            className={activeTab === "3" ? "active" : ""}
+            className={activeTab === '3' ? 'active' : ''}
             onClick={() => {
-              toggle("3");
-            }}
-          >
+              toggle('3');
+            }}>
             Like
           </NavLink>
         </NavItem>

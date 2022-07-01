@@ -1,23 +1,17 @@
-import React from "react";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Navigate,
-  Outlet,
-} from "react-router-dom";
-import DetailRecipe from "../pages/DetailRecipe";
-import Profile from "../pages/Profile";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
-import Addrecipe from "../pages/AddRecipe";
-import Searchrecipe from "../pages/Search";
-import EditRecipe from "../pages/EditRecipe";
+import React from 'react';
+import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
+import DetailRecipe from '../pages/DetailRecipe';
+import Profile from '../pages/Profile';
+import Login from '../pages/Login';
+import Register from '../pages/Register';
+import Addrecipe from '../pages/AddRecipe';
+import Searchrecipe from '../pages/Search';
+import EditRecipe from '../pages/EditRecipe';
 // -------
-import LandingPage from "../pages/LandingPage";
+import LandingPage from '../pages/LandingPage';
 
 const PrivateRoute = () => {
-  const token = localStorage.getItem("token");
+  const token = localStorage.getItem('token');
   if (token) {
     return <Outlet />;
   } else {

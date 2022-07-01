@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 export const postUserLogin = (body) => {
   return new Promise((resolve, reject) => {
@@ -14,8 +14,8 @@ export const postUserRegister = (body) => {
     axios
       .post(`${process.env.REACT_APP_BACKEND_URL}/register`, body, {
         headers: {
-          "Content-Type": "multipart/form-data",
-        },
+          'Content-Type': 'multipart/form-data'
+        }
       })
       .then((response) => resolve(response))
       .catch((err) => reject(err));
@@ -24,13 +24,13 @@ export const postUserRegister = (body) => {
 
 export const getUserDetailId = (token) => {
   return {
-    type: "GET_USER_DETAIL_ID",
+    type: 'GET_USER_DETAIL_ID',
     payload: axios({
       url: `${process.env.REACT_APP_BACKEND_URL}/users-detail-id`,
-      method: "GET",
+      method: 'GET',
       headers: {
-        token: token,
-      },
-    }),
+        token: token
+      }
+    })
   };
 };

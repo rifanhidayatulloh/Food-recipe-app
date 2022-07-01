@@ -1,10 +1,10 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 
-import latestRecipeReducer from "./latestRecipe";
-import searchRecipeReducer from "./seacrhRecipe";
-import myRecipeReducer from "./myRecipe";
-import getUserDetailId from "./userDetailId";
-import recipeByIdReducer from "./recipeById";
+import latestRecipeReducer from './latestRecipe';
+import searchRecipeReducer from './seacrhRecipe';
+import myRecipeReducer from './myRecipe';
+import getUserDetailId from './userDetailId';
+import recipeByIdReducer from './recipeById';
 
 const rootReducer = combineReducers({
   // --------recipes------
@@ -14,7 +14,7 @@ const rootReducer = combineReducers({
   recipeById: recipeByIdReducer,
 
   // ----------user--------
-  userDetaiId: getUserDetailId,
+  userDetaiId: getUserDetailId
 });
 
 export default rootReducer;
