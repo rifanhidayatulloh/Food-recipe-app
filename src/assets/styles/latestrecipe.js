@@ -15,7 +15,12 @@ const style = {
     fontSize: '27px',
     color: 'gold',
     position: 'absolute',
-    top: '250px'
+    top: '250px',
+    backgroundColor: 'white',
+    paddingBottom: '5px',
+    paddingLeft: '5px',
+    paddingRight: '5px',
+    borderRadius: '5px'
   }
 };
 
