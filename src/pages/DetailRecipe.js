@@ -14,8 +14,15 @@ const DetailRecipe = () => {
   const recipeById = useSelector((state) => {
     return state.recipeById.data;
   });
-  const ingredientsData = recipeById.ingredients;
-  const getIngredients = ingredientsData.split(',');
+
+  // const [loading, setLoading] = useState(true);
+  // const [getIngredients, setGetIngredients] = useState({});
+  // const ingredientsData = recipeById.ingredients;
+  // if (loading) {
+  //   setLoading(false);
+  //   const data = ingredientsData.split(',');
+  //   setGetIngredients(data);
+  // }
   // console.log(getIngredients);
 
   useEffect(() => {
@@ -52,13 +59,24 @@ const DetailRecipe = () => {
             <section className={detailrecipe.containerDetailMain}>
               <div className={detailrecipe.detailMainJumbotron}>
                 <h1 className={detailrecipe.detailMainJumbotronH1}>Ingredients</h1>
+                {/* {loading ? (
+                  <ul className={detailrecipe.detailMainJumbotronUl}>
+                    <li className={detailrecipe.jumbotronUlLi}>-{recipeById.ingredients}</li>
+                  </ul>
+                ) : (
+                  <ul className={detailrecipe.detailMainJumbotronUl}>
+                    {getIngredients.map((item, index) => (
+                      <li key={index} className={detailrecipe.jumbotronUlLi}>
+                        -{item}
+                      </li>
+                    ))}
+                  </ul>
+                )} */}
+
                 <ul className={detailrecipe.detailMainJumbotronUl}>
-                  {getIngredients.map((item, index) => (
-                    <li key={index} className={detailrecipe.jumbotronUlLi}>
-                      -{item}
-                    </li>
-                  ))}
+                  <li className={detailrecipe.jumbotronUlLi}>{recipeById.ingredients}</li>
                 </ul>
+
                 <div>
                   <h1 className={detailrecipe.jumbotronContentH1}>Video Step</h1>
                 </div>
