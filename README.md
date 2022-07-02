@@ -35,7 +35,6 @@
     <li><a href="#screenshoots">Screenshots</a></li>
     <li><a href="#related-project">Related Project</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
@@ -124,7 +123,3 @@ Project Link: [https://github.com/rifanhidayatulloh/Food-recipe-app](https://git
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## License
-Distributed under the [MIT](/LICENSE) License.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
