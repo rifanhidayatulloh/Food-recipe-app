@@ -98,6 +98,49 @@ REACT_APP_BACKEND_URL = [API_URL]
 <p align="center" display=flex>
 <table>
 
+  <tr>
+    <td>Login Page</td>
+    <td>Register Page</td>
+  </tr>
+  <tr>
+    <td><image src="https://i.postimg.cc/yNB1kH3y/Food-Recipe.png" alt="Login Page" width=100%></td>
+    <td><image src="https://i.postimg.cc/cLWC8YV3/Food-Recipe-1.png" alt="Register Page" width=100%/></td>
+  </tr>
+  
+  <tr>
+    <td>Landing Page Before Login</td>
+    <td>Landing Page After Login</td>
+  </tr> 
+  <tr>
+    <td><image src="https://i.postimg.cc/GmMRhyrd/Food-Recipe-2.png" alt="Landing Page Before Login" width=100%></td>
+    <td><image src="https://i.postimg.cc/kgDJScTB/Food-Recipe-3.png" alt="Landing Page After Login" width=100%/></td>
+  </tr>
+  
+  <tr>
+    <td>Searching Recipe Page</td>
+    <td>Detail Recipe Page</td>
+  </tr>
+  <tr>
+    <td><image src="https://i.postimg.cc/3RYzXr3n/Food-Recipe-4.png" alt="Searching Recipe Page" width=100%></td>
+    <td><image src="https://i.postimg.cc/sxBmSbGT/Food-Recipe-7.png" alt="Detail Recipe Page" width=100%/></td>
+  </tr>
+  
+  <tr>
+    <td>Insert Recipe Page</td>
+    <td>Edit Recipe Page</td>
+  </tr>
+  <tr>
+    <td><image src="https://i.postimg.cc/nrvyBsDR/Food-Recipe-5.png" alt="Searching Recipe Page" width=100%></td>
+    <td><image src="https://i.postimg.cc/Jzd2y3F7/Food-Recipe-6.png" alt="Detail Recipe Page" width=100%/></td>
+  </tr>
+  
+  <tr>
+    <td>My Recipe Page</td>
+  </tr>
+  <tr>
+    <td><image src="https://i.postimg.cc/ncFR0wbc/Food-Recipe-8.png" alt="Searching Recipe Page" width=100%></td>
+  </tr>
+
 </table>
       
 </p>
