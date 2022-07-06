@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../assets/styles/latestrecipe';
 import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import recipeIcon from '../assets/images/recipe-icon.png';
 
 const LatestRecipe = (props) => {
   // console.log(props.photo);
@@ -14,6 +15,9 @@ const LatestRecipe = (props) => {
               style={styles.img}
               alt="Card image"
               src={`${process.env.REACT_APP_BACKEND_URL}/${props.photo}`}
+              onError={(e) => {
+                e.target.src = { recipeIcon };
+              }}
             />
             <CardImgOverlay style={styles.title}>
               <CardTitle tag="h5" style={styles.title}>

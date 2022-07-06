@@ -67,7 +67,7 @@ const Login = () => {
                 className={styleregister.mainEmailInput}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 type="email"
-                placeholder=" examplexxx@gmail.com"
+                placeholder=" Enter email address"
                 id="email"
               />
               <label className={styleregister.mainCreatePassword}>Password</label>

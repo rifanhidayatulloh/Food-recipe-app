@@ -67,11 +67,12 @@
   position: absolute;
   top: 50px;
   left: 170px;
+  width: 65%;
 }
 .jumbotronUlLi {
   list-style-type: none;
   color: #3f3a3a;
-  width: 330px;
+  width: 100%;
   font-size: medium;
 }
 .jumbotronContentH1 {

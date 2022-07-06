@@ -10,6 +10,8 @@ import Swal from 'sweetalert2';
 import { useSelector, useDispatch } from 'react-redux';
 import { getMyRecipe, deleteRecipe } from '../redux/actions/recipes';
 import { getUserDetailId } from '../redux/actions/users';
+import profileDefault from '../assets/images/profile-default.png';
+import recipeIcon from '../assets/images/recipe-icon.png';
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -91,6 +93,9 @@ const Profile = () => {
                     src={`${process.env.REACT_APP_BACKEND_URL}/${userDetaiId.photo}`}
                     alt="img"
                     className={profilestyle.topMainProfileImg}
+                    onError={(e) => {
+                      e.target.src = { profileDefault };
+                    }}
                   />
                 </div>
                 <h1 className={profilestyle.topMainH1}>{userDetaiId.user_name}</h1>
@@ -157,6 +162,9 @@ const Profile = () => {
                         style={styles.img}
                         alt="Card image"
                         src={`${process.env.REACT_APP_BACKEND_URL}/${e.photo}`}
+                        onError={(e) => {
+                          e.target.src = { recipeIcon };
+                        }}
                       />
                       <CardImgOverlay style={styles.title}>
                         <CardTitle tag="h5" style={styles.title}>
