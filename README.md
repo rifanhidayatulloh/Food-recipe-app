@@ -103,7 +103,7 @@ REACT_APP_BACKEND_URL = [API_URL]
     <td>Register Page</td>
   </tr>
   <tr>
-    <td><image src="https://i.postimg.cc/yNB1kH3y/Food-Recipe.png" alt="Login Page" width=100%></td>
+    <td><image src="https://i.postimg.cc/Pxr3MWfv/Food-Recipe.png" alt="Login Page" width=100%></td>
     <td><image src="https://i.postimg.cc/cLWC8YV3/Food-Recipe-1.png" alt="Register Page" width=100%/></td>
   </tr>
   
