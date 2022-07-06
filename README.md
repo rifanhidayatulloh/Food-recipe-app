@@ -122,7 +122,7 @@ REACT_APP_BACKEND_URL = [API_URL]
   </tr>
   <tr>
     <td><image src="https://i.postimg.cc/3RYzXr3n/Food-Recipe-4.png" alt="Searching Recipe Page" width=100%></td>
-    <td><image src="https://i.postimg.cc/sxBmSbGT/Food-Recipe-7.png" alt="Detail Recipe Page" width=100%/></td>
+    <td><image src="https://i.postimg.cc/76CMKmzc/Food-Recipe-7.png" alt="Detail Recipe Page" width=100%/></td>
   </tr>
   
   <tr>
@@ -131,7 +131,7 @@ REACT_APP_BACKEND_URL = [API_URL]
   </tr>
   <tr>
     <td><image src="https://i.postimg.cc/nrvyBsDR/Food-Recipe-5.png" alt="Searching Recipe Page" width=100%></td>
-    <td><image src="https://i.postimg.cc/Jzd2y3F7/Food-Recipe-6.png" alt="Detail Recipe Page" width=100%/></td>
+    <td><image src="https://i.postimg.cc/d0RKLj3b/Food-Recipe-9.png" alt="Edit Recipe Page" width=100%/></td>
   </tr>
   
   <tr>
